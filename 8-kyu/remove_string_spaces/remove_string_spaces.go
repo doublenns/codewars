@@ -24,3 +24,7 @@ func NoSpace2(word string) string {
 	}
 	return result.String()
 }
+
+func NoSpace3(word string) string {
+	return strings.ReplaceAll(word, " ", "")
+}
