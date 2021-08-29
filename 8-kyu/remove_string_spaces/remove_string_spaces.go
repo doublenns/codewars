@@ -28,3 +28,8 @@ func NoSpace2(word string) string {
 func NoSpace3(word string) string {
 	return strings.ReplaceAll(word, " ", "")
 }
+
+func NoSpace4(word string) string {
+	ws := strings.Fields(word)
+	return strings.Join(ws, "")
+}
