@@ -6,11 +6,19 @@ def reverse_words1(s):
         i+=1; j-=1
     return " ".join(words)
 
+
 def reverse_words2(s):
     words = s.split()
     reversedWords = words[::-1]
     return " ".join(reversedWords)
 
+
 def reverse_words3(s):
     words = s.split()
     return " ".join(reversed(words))
+
+
+def reverse_words4(s):
+    words = s.split()
+    words.reverse()
+    return " ".join(words)
