@@ -11,3 +11,15 @@ func Pyramid(n int) [][]int {
 	}
 	return res
 }
+
+func PyramidOptimized(n int) [][]int {
+	row := [][]int{}
+	cell := []int{}
+
+	for i := 0; i < n; i++ {
+		cell = append(cell, 1)
+		row = append(row, cell)
+	}
+
+	return row
+}
